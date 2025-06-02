@@ -1,0 +1,27 @@
+yfinance_data/
+raw_analyst_ratings.csv
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.ipynb_checkpoints/
+
+# Jupyter Notebooks
+*.ipynb
+
+# Virtual environment
+venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+
+# Data files
+*.csv
+*.json
+*.parquet
+
+# Logs and temporary files
+*.log
+*.tmp
