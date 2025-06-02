@@ -1,13 +1,10 @@
 yfinance_data/
-raw_analyst_ratings.csv
 # Python
 __pycache__/
 *.py[cod]
 *.pyc
 *.ipynb_checkpoints/
 
-# Jupyter Notebooks
-*.ipynb
 
 # Virtual environment
 venv/
