@@ -1,0 +1,24 @@
+yfinance_data/
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.ipynb_checkpoints/
+
+
+# Virtual environment
+venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+
+# Data files
+*.csv
+*.json
+*.parquet
+
+# Logs and temporary files
+*.log
+*.tmp
