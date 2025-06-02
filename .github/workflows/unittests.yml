@@ -20,4 +20,4 @@ jobs:
 
     - name: Run script
       run: |
-        python scripts/eda.py
+        python notebooks/eda.ipynb
