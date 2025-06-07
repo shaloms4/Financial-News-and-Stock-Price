@@ -151,39 +151,4 @@ def plot_correlation(df, stock_symbol, correlation, p_value):
     
     plt.tight_layout()
     
-    # Save the plot
-    plot_filename = f'{stock_symbol}_sentiment_correlation.png'
-    plt.savefig(plot_filename)
-    plt.close()
-    return plot_filename
-
-# Main function
-def main():
-    # File paths
-    stock_file = './yfinance_data/AAPL_historical_data.csv'  # Replace with your stock CSV path
-    news_file = './raw_analyst_ratings.csv'  # Replace with your news CSV path
-    stock_symbol = 'A'  # Stock symbol in news data (e.g., 'A' for Agilent)
-    
-    # Load data
-    stock_df = load_stock_data(stock_file)
-    news_df = load_news_data(news_file, save_normalized=True, output_path='normalized_news_data.csv')
-    
-    # Prepare combined data
-    combined_df = prepare_combined_data(stock_df, news_df, stock_symbol)
-    
-    # Calculate correlation
-    correlation, p_value = calculate_correlation(combined_df)
-    print(f"Correlation between sentiment and daily returns for {stock_symbol}: {correlation:.3f}")
-    print(f"P-value: {p_value:.3f}")
-    
-    # Visualize results
-    plot_file = plot_correlation(combined_df, stock_symbol, correlation, p_value)
-    print(f"Correlation plot saved to {plot_file}")
-    
-    # Save combined data
-    output_file = f'{stock_symbol}_sentiment_returns.csv'
-    combined_df.to_csv(output_file)
-    print(f"Combined data saved to {output_file}")
-
-if __name__ == "__main__":
-    main()
+    plt.show()
