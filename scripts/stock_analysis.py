@@ -100,4 +100,4 @@ def plot_stock_analysis(df, stock_symbol):
     # Display the plot inline
     plt.show()
     
-    return fig  # Return the figure object in case you want to save it later
+    return fig  
